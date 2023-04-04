@@ -30,11 +30,11 @@
 }
 
 .stacks {
-  background-image: url(./Sass/images/bottomwaves3.svg);
+  background-image: url(../Sass/images/bottomwaves3.svg);
 }
 
 .wave {
-  background-image: url(./Sass/images/waves.svg);
+  background-image: url(../Sass/images/waves.svg);
 }
 
 .Murilo {
@@ -260,7 +260,7 @@
   font-family: "Bebas Neue", cursive;
   width: 80%;
   min-height: 80vh;
-  background: url(./Sass/images/stacks.svg);
+  background: url(../Sass/images/stacks.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -343,7 +343,7 @@
   min-height: 90vh;
   width: 80%;
   border-radius: 10px;
-  background: url(./Sass/images/blob2.svg);
+  background: url(../Sass/images/blob2.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -435,7 +435,7 @@
   min-height: 80vh;
   width: 80%;
   display: grid;
-  background-image: url(./Sass/images/sidestacks.svg);
+  background-image: url(../Sass/images/sidestacks.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -523,7 +523,7 @@
 
 .footer {
   font-weight: lighter;
-  background-image: url(./Sass/images/footer.svg);
+  background-image: url(../Sass/images/footer.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
