@@ -778,6 +778,9 @@
   }
 }
 @media (max-width: 550px) {
+  .footer {
+    font-size: 10px;
+  }
   .sun {
     transform: translateZ(-10px) scale(0.5);
   }
