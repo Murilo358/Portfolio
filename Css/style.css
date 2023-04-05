@@ -548,8 +548,8 @@
   .initiationMainContainer p {
     font-size: 25px;
   }
-  .initiationMainContainer img {
-    width: 450px;
+   .initiationMainContainer img {
+    width: 380px;
     height: 600px;
   }
   .skillsWindow {
@@ -581,8 +581,8 @@
     height: 400px;
   }
   .aboutMeMainContainer img {
-    width: 500px;
-    height: 650px;
+    width: 380px;
+    height: 600px;
   }
   .aboutMeText {
     font-size: 25px;
@@ -610,6 +610,10 @@
   .projectItems {
     width: 100%;
   }
+   .profileImg img {
+    width: 280px;
+    height: 430px;
+  } 
   .projectsWindow {
     min-height: 90vh;
   }
@@ -683,8 +687,8 @@
     width: 150px;
     height: 150px;
   }
-  .profileImg img {
-    width: 250px;
+    .profileImg img {
+    width: 220px;
     height: 350px;
   }
   .contactInformation h1 {
@@ -695,11 +699,6 @@
   
    .footer{
    font-size: 15px
-  }
-  
-  .profileImg img {
-    min-width: 180px;
-    max-height: 300px;
   }
   .aboutMeMainContainer img {
     width: 200px;
@@ -749,9 +748,9 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .initiationSection .profileImg img {
-    width: 150px;
-    height: 250px;
+   .initiationSection .profileImg img {
+    width: 180px;
+    height: 300px;
   }
   .aboutMeMainContainer {
     column-gap: 20px;
@@ -789,7 +788,7 @@
   }
   .aboutMeMainContainer img {
     opacity: 1;
-    width: 180px;
+     width: 160px;
     height: 230px;
   }
   .skillsWindow {
