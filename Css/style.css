@@ -532,11 +532,11 @@
 }
 
 @media (min-width: 1399px) and (max-width: 2652px) {
-  .header {
-    font-size: 25px;
+  .header a{
+    font-size: 30px;
   }
   .header .navbar-brand {
-    font-size: 35px;
+    font-size: 30px;
   }
   .projectItem {
     width: 300px;
