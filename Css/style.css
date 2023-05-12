@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300&family=Lexend+Exa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 * {
   scroll-behavior: smooth;
   padding: 0;
@@ -10,100 +5,34 @@
   box-sizing: border-box;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
+.headerLogo {
+  font-family: monospace;
 }
 
-.sectionTitle {
-  padding: 5px;
-  color: white;
-  font-size: 60px;
-  box-shadow: 5px 5px #000000;
-  font-family: "Bebas Neue", cursive;
-  width: max-content;
-  border-radius: 2px;
-  background-color: #bb1b1b;
-}
-
-.spacer {
-  aspect-ratio: 900/300;
+.nav-bar {
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.stacks {
-  background-image: url(../Sass/images/bottomwaves3.svg);
-}
-
-.wave {
-  background-image: url(../Sass/images/waves.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 11;
 }
 
 .Murilo {
-  color: #bb1b1b;
+  color: #c53030;
 }
 
-.header {
-  font-family: "Rubik", sans-serif;
-  backdrop-filter: blur(10px);
-  background: rgba(100, 100, 100, 0.1490196078);
-  box-shadow: #000000 2px 2px 5px;
-  font-size: 20px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.initiationSection {
   color: white;
-}
-
-#header {
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 1;
-}
-
-.underLineHover {
-  display: inline-block;
-  position: relative;
-}
-
-.underLineHover::after {
-  content: "";
+  height: 100%;
   position: absolute;
-  width: 90%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
+  top: 0;
   left: 0;
-  background: linear-gradient(270deg, #bb1b1b 0%, #202020 100%);
-  transform-origin: bottom right;
-  transition: transform 0.35s;
 }
 
-.underLineHover:hover::after {
-  transition: transform 0.35s;
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #181818;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #bb1b1b;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #bb1b1b;
+.initiationSection {
+  z-index: 10;
 }
 
 .wrapper {
@@ -113,7 +42,7 @@
   perspective: 10px;
 }
 
-.parallaxImgs {
+header {
   position: relative;
   display: flex;
   justify-content: center;
@@ -128,7 +57,7 @@
 }
 
 .sun {
-  transform: translateZ(-10px) scale(0.6);
+  transform: translateZ(-10px) scale(1);
 }
 
 .foreground {
@@ -145,813 +74,136 @@
 }
 
 .initiationSection {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.initiationMainContainer {
-  color: white;
-  height: 90vh;
 }
 
 .initiationAboutMe {
-  display: inline-block;
-}
-
-.socialMediaAnchor {
-  margin-right: 10px;
-  font-size: 35px;
-  color: white;
-  border: none;
-}
-
-.socialMediaAnchor:hover {
-  color: #bb1b1b;
+  width: 400px;
 }
 
 .typingText {
-  width: 11.5ch;
-  border-right: 3px solid #bb1b1b;
-  animation: typing 1.5s steps(14), blink 0.5s step-end infinite alternate;
+  font-family: monospace;
+  width: 100%;
+  animation: typing 2s steps(22), step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  font-family: "rubik";
-  font-size: 2em;
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 @keyframes typing {
   from {
     width: 0;
   }
 }
-.aboutMeSection {
+.aboutMe {
   background-color: #121212;
 }
 
 .aboutMeMainContainer {
   column-gap: 50px;
   color: white;
-  min-height: 90vh;
-}
-.aboutMeMainContainer .profileImg {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45) inset;
+  min-height: 80vh;
 }
 
 .aboutMeText {
-  font-family: "Rubik", sans-serif;
-  padding: 15px;
-  box-shadow: 5px 5px 10px #000000;
-  background-color: #181818;
   width: 40%;
 }
 
-.Button {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.abilitiesSection {
+  background-color: #121212;
+}
+
+.abilitiesMainContainer {
+  color: white;
+  min-height: 100vh;
+}
+
+.abilitiesItem {
+  padding: 20px;
+  border-radius: 120px;
+  width: 150px;
+  height: 150px;
   position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  z-index: 0;
-  background: transparent;
-  overflow: hidden;
-  border: 2px solid #bb1b1b;
-  color: #bb1b1b;
+  width: 50%;
+  float: right;
+}
+.abilitiesItem img {
+  width: 150px;
+  height: 150px;
+  border: #c53030 solid 2px;
+  box-shadow: 5px 10px 0px #000000, 1px 3px 2px #c73838 inset;
+}
+.abilitiesItem :hover {
+  transition: 0.3s ease;
+  padding: 10px;
 }
 
-.Button:hover {
-  color: #fff;
-}
-
-.Button:hover:after {
-  width: 100%;
-}
-
-.Button:after {
-  content: "";
+.overlay {
   position: absolute;
-  z-index: -1;
-  transition: all 0.3s ease;
-  left: 0;
-  top: 0;
+  bottom: 100%;
+  background-color: #c53030;
+  overflow: hidden;
   width: 0;
   height: 100%;
-  background: #bb1b1b;
-}
-
-.skillsSection {
-  background-color: #080808;
-}
-
-.skillsMainContainer {
-  min-height: 100vh;
-}
-
-.skillsWindow {
-  color: white;
-  font-family: "Bebas Neue", cursive;
-  width: 80%;
-  min-height: 80vh;
-  background: url(../Sass/images/stacks.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
-
-.skillsItems {
-  width: 90%;
-  min-height: 100%;
-  margin-top: 100px;
-  column-gap: 50px;
-}
-
-.skillsItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45) inset;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.skillsItem img {
-  width: 200px;
-  height: 200px;
-  box-shadow: 7px 7px 10px #000000;
-}
-
-.skillsFlipCard {
-  background-color: transparent;
-  width: 200px;
-  height: 200px;
-  perspective: 1000px;
-}
-
-.skillsFlipCard:hover .skillsItem {
-  transform: rotateY(180deg);
-}
-
-.skillsFlipCard-front,
-.skillsFlipCard-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.skillsFlipCard-front p,
-.skillsFlipCard-back p {
-  font-family: "Lexend Exa", sans-serif;
-  font-size: 10px;
-}
-
-.skillsFlipCard-back {
-  overflow: hidden;
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45) inset;
-  background-color: #050505;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.projectsSection {
-  background-color: #080808;
-  overflow-y: hidden;
-  padding-bottom: 100px;
-}
-
-.projectsMainContainer {
-  min-height: 100vh;
-}
-
-.projectsWindow {
-  min-height: 90vh;
-  width: 80%;
-  border-radius: 10px;
-  background: url(../Sass/images/blob2.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.projectItems {
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  column-gap: 30px;
-}
-
-.projectItem {
-  position: relative;
-  border-radius: 30px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4509803922) inset;
-  width: 200px;
-  height: 200px;
-  box-shadow: 7px 7px 10px #000000;
-}
-
-.projectItemImageTitle {
-  font-family: "Bebas Neue", cursive;
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  background: #000000;
-  background: rgba(0, 0, 0, 0.8);
-  color: #f1f1f1;
-  width: 100%;
-  transition: 1s ease;
-  opacity: 1;
-  color: white;
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-}
-
-.projectItemOverlay {
-  border-radius: 30px;
-  font-family: "Lexend Exa", sans-serif;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #0a0a0a;
-  background: rgba(10, 10, 10, 0.8);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
   transition: 0.5s ease;
+  z-index: 1;
 }
 
-.projectItem:hover .projectItemOverlay {
-  height: 100%;
-}
-
-.projectItem:hover .projectItemImageTitle {
-  transition: none;
-  opacity: 0;
-}
-
-.projectItemText {
+.overlayText {
+  font-family: monospace;
   color: white;
-  font-size: 20px;
+  text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000, 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+  font-size: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+  padding: 2px;
 }
 
-.contactSection {
+.abilitiesItem:hover .overlay {
+  border-radius: 10px;
+  border: #000000 2px solid;
+  box-shadow: 15px 15px 5px #000000;
+  width: 250px;
+  bottom: 100%;
+}
+
+.abilitiesWindow {
+  width: 100%;
+  box-shadow: 15px 15px 5px #000000, 3px 3px 3px #c53434 inset;
+  border-radius: 30px;
+  border: #c53030 3px solid;
+}
+.abilitiesWindow h1 {
+  font-size: 25px;
+}
+
+.abilitiesItems {
+  min-height: 70vh;
+  max-height: auto;
+  column-gap: 15px;
+}
+
+.projetosSection {
   background-color: #121212;
-  padding-bottom: 10vh;
 }
 
-.contactMainContainer {
-  position: relative;
+.projetosSubDiv {
+  color: white;
   min-height: 100vh;
 }
 
-.contactWindow {
-  font-family: "Lexend Exa", sans-serif;
-  min-height: 80vh;
-  width: 80%;
-  display: grid;
-  background-image: url(../Sass/images/sidestacks.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  text-align: center;
-}
-.contactWindow h1::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 100px;
-  border-radius: 2px;
-  background-color: #bb1b1b;
-}
-
-.contactInformation {
-  padding: 25px 40px;
-  color: white;
-  width: 80%;
-  min-height: 100%;
-  font-family: "Ubuntu", sans-serif;
-}
-.contactInformation h1 {
-  position: relative;
-}
-.contactInformation td {
-  align-self: flex-start;
-  font-size: 20px;
-  padding-bottom: 5vh;
-}
-.contactInformation .informations {
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.45) inset;
-  min-height: 80%;
-  display: flex;
-  align-items: center;
-}
-
-.footer {
-  font-size: 30px;
-}
-
-.contactSendEmail {
-  padding: 25px 40px;
-  color: white;
-  width: 100%;
-  min-height: 100%;
-}
-.contactSendEmail h1 {
-  position: relative;
-  margin-bottom: 10vh;
-}
-.contactSendEmail .emailForm {
-  color: white;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  background-color: #202020;
-  margin-bottom: 2vh;
-  outline: none;
-  border: 1px solid #000000;
-}
-.contactSendEmail input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px #252525 inset;
-}
-.contactSendEmail input:-webkit-autofill {
-  -webkit-text-fill-color: #fff;
-}
-.contactSendEmail .emailForm:hover {
-  background-color: #252525;
-}
-.contactSendEmail .emailForm:focus {
-  border: 1px solid #505050;
-  background-color: #303030;
-}
-.contactSendEmail .message {
-  min-height: 300px;
-  max-height: 300px;
-  resize: none;
-}
-
-.footer {
-  font-weight: lighter;
-  background-image: url(../Sass/images/footer.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 10vh;
-  color: white;
-}
-
-@media (min-width: 1399px) and (max-width: 2652px) {
-  .header a{
-    font-size: 30px;
-  }
-  .header .navbar-brand {
-    font-size: 30px;
-  }
-  .projectItem {
-    width: 300px;
-    height: 300px;
-  }
-  .initiationMainContainer h1 {
-    font-size: 50px;
-  }
-  .initiationMainContainer p {
-    font-size: 25px;
-  }
-   .initiationMainContainer img {
-    width: 380px;
-    height: 600px;
-  }
-  .skillsWindow {
-    width: 100%;
-  }
-  .skillsItems {
-    column-gap: 50px;
-  }
-  .skillsItem {
+@media (max-width: 995px) {
+  .profileImg img {
     width: 250px;
-    height: 250px;
-  }
-  .skillsItem img {
-    width: 250px;
-    height: 250px;
-  }
-  .skillsFlipCard {
-    width: 250px;
-    height: 250px;
-  }
-  .skillsFlipCard-back p {
-    font-size: 15px;
-  }
-  .projectsWindow {
-    width: 100%;
-  }
-  .projectItem {
-    width: 400px;
-    height: 400px;
-  }
-  .aboutMeMainContainer img {
-    width: 380px;
-    height: 600px;
-  }
-  .aboutMeText {
-    font-size: 25px;
-    width: 100%;
-    height: 100%;
-  }
-  .Button {
-    height: 70px;
-    font-size: 30px;
-  }
-  .contactWindow {
-    width: 100%;
-  }
-  .contactWindow h1 {
-    font-size: 50px;
-  }
-  .contactWindow .emailForm {
-    font-size: 25px;
-  }
-  .contactWindow i {
-    font-size: 40px;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1399px) {
-  .projectItems {
-    width: 100%;
-  }
-   .profileImg img {
-    width: 280px;
-    height: 430px;
-  } 
-  .projectsWindow {
-    min-height: 90vh;
-  }
-  .projectItem {
-    width: 220px;
-    height: 220px;
-  }
-  .contactWindow {
-    width: 90%;
-  }
-  .contactInformation td {
-    font-size: 20px;
-  }
-}
-@media (min-width: 770px) and (max-width: 1000px) {
-  
-  .footer{
-   font-size: 20px
-  }
-  .contactWindow {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .aboutMeMainContainer {
-    column-gap: 20px;
-  }
-  .sectionTitle {
-    font-size: 50px;
-  }
-  .aboutMeText {
-    width: 100%;
-  }
-  .skillsWindow {
-    width: 100%;
-  }
-  .skillsItems {
-    column-gap: 10px;
-  }
-  .skillsItem {
-    width: 180px;
-    height: 180px;
-  }
-  .skillsItem img {
-    width: 180px;
-    height: 180px;
-  }
-  .projectItem {
-    width: 200px;
-    height: 200px;
-  }
-  .projectItems {
-    width: 100%;
-  }
-  .projectsWindow {
-    min-height: 90vh;
-    width: 100%;
-  }
-  .abilitiesWindow {
-    width: 100%;
-  }
-  .flip-card {
-    font-size: 10px;
-    width: 150px;
-    height: 150px;
-  }
-  .abilitiesItem {
-    width: 100%;
-    height: 100%;
-  }
-  .abilitiesItem img {
-    width: 150px;
-    height: 150px;
-  }
-    .profileImg img {
-    width: 220px;
     height: 350px;
   }
-  .contactInformation h1 {
-    margin-bottom: 10vh;
-  }
-}
-@media (min-width: 520px) and (max-width: 770px) {
-  
-   .footer{
-   font-size: 15px
-  }
-  .aboutMeMainContainer img {
-    width: 200px;
-    height: 300px;
-  }
-  .skillsWindow {
-    width: 100%;
-  }
-  .skillsItems {
-    column-gap: 10px;
-  }
-  .skillsItem {
-    width: 180px;
-    height: 180px;
-  }
-  .skillsItem img {
-    width: 180px;
-    height: 180px;
-  }
-  .projectItem {
-    width: 250px;
-    height: 200px;
-  }
-  .projectItem img {
+  .SubDivName {
     width: 300px;
-  }
-  .contactInformation h1 {
-    font-size: 25px;
-    margin-bottom: 10vh;
-  }
-  .contactInformation td {
-    font-size: 20px;
-  }
-  .contactSendEmail h1 {
-    font-size: 25px;
-  }
-  .projectItems {
-    row-gap: 30px;
-    padding: 10px 0 10px 0;
-  }
-  .projectsWindow {
-    min-height: 60vh;
-    width: 100%;
-  }
-  .contactWindow {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-   .initiationSection .profileImg img {
-    width: 180px;
-    height: 300px;
-  }
-  .aboutMeMainContainer {
-    column-gap: 20px;
-  }
-  .aboutMeText {
-    width: 60%;
-    font-size: 13px;
-  }
-  .initiationAboutMe h1 {
-    font-size: 18px;
-  }
-  .initiationAboutMe p {
-    font-size: 12px;
-  }
-  .sectionTitle {
-    font-size: 40px;
-  }
-  .projectImageTitle {
-    padding: 5px;
-    font-size: 15px;
-  }
-  .projectText {
-    font-size: 15px;
-  }
-}
-@media (max-width: 550px) {
-  .footer {
-    font-size: 10px;
-  }
-  .sun {
-    transform: translateZ(-10px) scale(0.5);
-  }
-  .initiationSection .profileImg img {
-    opacity: 0;
-  }
-  .aboutMeMainContainer img {
-    opacity: 1;
-     width: 160px;
-    height: 230px;
-  }
-  .skillsWindow {
-    width: 100%;
-  }
-  .skillsItems {
-    column-gap: 10px;
-    height: 100%;
-    width: 100%;
-  }
-  .skillsFlipCard {
-    width: 130px;
-    height: 130px;
-  }
-  .skillsFlipCard-back {
-    padding: 10px;
-  }
-  .skillsFlipCard-back p {
-    font-size: 8px;
-  }
-  .socialMediaAnchor {
-    font-size: 30px;
-  }
-  .skillsItem {
-    width: 130px;
-    height: 130px;
-  }
-  .skillsItem img {
-    width: 130px;
-    height: 130px;
-  }
-  .projectItem {
-    width: 250px;
-    height: 200px;
-  }
-
-  .contactInformation h1 {
-    font-size: 20px;
-    margin-bottom: 5vh;
-  }
-  .contactInformation td {
-    font-size: 15px;
-  }
-  .contactSendEmail {
-    padding: 10px;
-  }
-  .contactSendEmail h1 {
-    font-size: 20px;
-  }
-  .contactSendEmail .message {
-    min-height: 200px;
-    max-height: 200px;
-  }
-  .projectItems {
-    row-gap: 30px;
-    padding: 10px 0 10px 0;
-  }
-  .projectsWindow {
-    min-height: 60vh;
-    width: 100%;
-  }
-  .contactWindow {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .aboutMeMainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 20px;
-  }
-  .aboutMeText {
-    width: 100%;
-    font-size: 13px;
-  }
-  .initiationAboutMe {
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    min-width: 100%;
-  }
-  .initiationAboutMe h1 {
-    font-size: 25px;
-  }
-  .initiationAboutMe p {
-    font-size: 15px;
-  }
-  .sectionTitle {
-    font-size: 40px;
-  }
-  .projectImageTitle {
-    padding: 5px;
-    font-size: 15px;
-  }
-  .projectText {
-    font-size: 15px;
-  }
-}
-@media (max-width: 330px) {
-  .footer {
-    font-size: 10px;
-  }
-  .emailForm {
-    font-size: 10px;
-  }
-  .skillsFlipCard {
-    width: 110px;
-    height: 110px;
-  }
-  .skillsFlipCard-back {
-    padding: 8px;
-  }
-  .skillsFlipCard-back p {
-    font-size: 7px;
-  }
-  .skillsItem {
-    width: 110px;
-    height: 110px;
-  }
-  .skillsItem img {
-    width: 110px;
-    height: 110px;
-  }
-  .projectItem {
-    width: 200px;
-    height: 200px;
-  }
-  .projectItem img {
-    width: 200px;
-  }
-}
-@media (max-width: 290px) {
-  .skillsFlipCard {
-    width: 90px;
-    height: 90px;
-  }
-  .skillsFlipCard-back {
-    padding: 8px;
-  }
-  .skillsFlipCard-back p {
-    font-size: 7px;
-  }
-  .skillsItem {
-    width: 90px;
-    height: 90px;
-  }
-  .skillsItem img {
-    width: 90px;
-    height: 90px;
-  }
-  .projectItem {
-    width: 200px;
-    height: 200px;
-  }
-  .projectItem img {
-    width: 200px;
   }
 }
 .ArrowDown {
@@ -962,12 +214,6 @@
   display: flex;
   background-color: transparent;
   border: none;
-}
-
-@media (max-width: 550px) {
-  .ArrowDown {
-    width: 50px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
