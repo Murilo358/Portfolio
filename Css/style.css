@@ -154,6 +154,25 @@
   z-index: 10;
 }
 
+.meChamo {
+  font-size: 30px;
+}
+.profileImg {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-7px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 .initiationMainContainer {
   color: white;
   height: 90vh;
@@ -162,10 +181,6 @@
 .initiationAboutMe {
   display: inline-block;
   font-family: "ubuntu";
-}
-
-.initiationAboutMe h1 {
-  font-size: 30px;
 }
 
 .socialMediaAnchor {
@@ -186,7 +201,7 @@
   white-space: nowrap;
   overflow: hidden;
   font-family: "rubik";
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 @keyframes blink {
