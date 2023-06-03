@@ -122,6 +122,7 @@
   height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
+  background: linear-gradient(270deg, #bb1b1b 100%);
 }
 
 .background {
@@ -161,6 +162,10 @@
 .initiationAboutMe {
   display: inline-block;
   font-family: "ubuntu";
+}
+
+.initiationAboutMe h1 {
+  font-size: 30px;
 }
 
 .socialMediaAnchor {
@@ -984,6 +989,5 @@
     width: 50px;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */
